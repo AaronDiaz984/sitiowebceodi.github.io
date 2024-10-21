@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.diagonal-background {
+    height: 851px; /* Altura fija de 851px */
+    background: linear-gradient(to right, #97E9D4, #03BB85); /* Degradado de verde claro a verde oscuro */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); /* Crea el ángulo diagonal */
+    position: relative;
+  }
+
+  /* Estilos para el menú */
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #f0f0f0;
+  }
+
+  .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .promo-text {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .promo-text span {
+    display: block;
+    font-size: 32px;
+  }
+
+  .promo-text strong {
+    font-size: 40px;
+  }
+
+  /* Estilos para la imagen de los instrumentos */
+  .promo-image {
+    position: absolute;
+      bottom: 30px; /* Ajuste de posición vertical */
+      left: 50%; /* Ajuste de posición horizontal */
+      width: 607px; /* Ajustar tamaño de la imagen según necesidad */
+      height: 588px;
+  }
+  .consultas-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .consultas-title {
+    margin-top: 203px; /* Espacio entre la imagen del header y el título */
+    margin-bottom: 180px; /* Espacio entre el título y el formulario */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #34e89e;
+  }
+
+  .consultas-form {
+    width: 668px; /* Ancho del formulario */
+    height: 572px; /* Altura del formulario */
+    background-color: #03BB85; /* Color verde de fondo */
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .consultas-form input, 
+  .consultas-form textarea {
+    width: 408px; /* Ancho de las cajas de texto */
+    height: 33px; /* Altura de las cajas de texto (excepto textarea) */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .consultas-form textarea {
+    height: 186px; /* Altura del textarea */
+  }
+
+  .consultas-form button {
+    width: 124px; /* Alineación con las cajas de texto */
+    height: 32px; /* Altura del botón */
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  .consultas-form button:hover {
+    background-color: #f0f0f0;
+  }
